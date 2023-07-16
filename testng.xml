@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<suite name="Big TestNG Test">
+    <listeners>
+        <listener class-name="com.aventstack.extentreports.testng.listener.ExtentITestListenerAdapter"/>
+    </listeners>
+    <groups>
+        <run>
+            <include name="Sanity"/>
+            <exclude name="Regression"/>
+            <include name="Smoke"/>
+        </run>
+    </groups>
+    <test name="Login Test case">
+        <classes>
+            <class name="com.big.testNGscripts.LoginTest"/>
+            <class name="com.big.testNGscripts.CategoriesTest"/>
+        </classes>
+    </test>
+</suite>
